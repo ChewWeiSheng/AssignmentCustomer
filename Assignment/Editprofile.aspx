@@ -34,10 +34,21 @@
         .auto-style25 {
             height: 140px;
         }
-        .auto-style26 {
-            margin-top: 0px;
-            height: 126px;
-            width: 276px;
+        .auto-style27 {
+            height: 30px;
+            width: 253px;
+        }
+        .auto-style28 {
+            height: 30px;
+        }
+        .auto-style29 {
+            height: 50px;
+            width: 253px;
+        }
+        .auto-style30 {
+            height: 34px;
+            text-align: left;
+            width: 253px;
         }
     </style>
 
@@ -49,23 +60,23 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style2">Gender:</td>
-                    <td>
-                        <asp:RadioButtonList ID="rbtnGender" runat="server" Width="115px">
+                    <td class="auto-style27">Gender:</td>
+                    <td class="auto-style28">
+                        <asp:RadioButtonList ID="rbtnGender" runat="server" Width="172px" RepeatDirection="Horizontal">
                             <asp:ListItem>Male</asp:ListItem>
                             <asp:ListItem>Female</asp:ListItem>
                         </asp:RadioButtonList>
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style2">H/P No:</td>
+                    <td class="auto-style29">H/P No:</td>
                     <td>
                         <asp:TextBox ID="txtHP" runat="server" height="20px" Width="316px"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style21">Email:</td>
-                    <td class="auto-style4">
+                    <td class="auto-style30">Email:</td>
+                    <td class="auto-style9">
                         <asp:TextBox ID="txtEmail" runat="server" height="20px" Width="316px"></asp:TextBox>
                     </td>
                 </tr>
@@ -88,11 +99,12 @@
                 <tr>
                     <td class="auto-style24">Shipping Address:</td>
                     <td class="auto-style25">
-                        <textarea id="TextArea1" class="auto-style26" name="S1"></textarea></td>
+                        <asp:TextBox ID="txtAddress" runat="server" Height="110px" Width="219px" TextMode="MultiLine"></asp:TextBox>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style22" colspan="2">
-                        <asp:Button ID="btnSave" runat="server" Text="Save" Width="186px" />
+                        <asp:Button ID="btnSave" runat="server" Text="Save" Width="186px" OnClick="btnSave_Click" />
                     </td>
                 </tr>
             </table>

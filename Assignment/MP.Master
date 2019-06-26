@@ -56,18 +56,6 @@ input[type=text] {
             height: 33px;
             text-align: left;
             }
-        .auto-style16 {
-            margin-left: 0px;
-            margin-right: 76px;
-            margin-top: 12px;
-            margin-bottom: 22px;
-        }
-        .auto-style17 {
-            margin-top: 0px;
-        }
-        .auto-style18 {
-            margin-left: 0px;
-        }
         </style>
 </head>
 <body>
@@ -91,7 +79,9 @@ input[type=text] {
                 <td class="auto-style2" style="background-color: #C0C0C0">
                     <asp:Image ID="Image1" runat="server" Height="87px" ImageUrl="~/pic/b7c37c5a9e.jpg" Width="91px" />
                     <br />
-                    User Name</td>
+                    <br />
+                    <asp:Label ID="lblUser" runat="server" Text="Username"></asp:Label>
+                </td>
             </tr>
             <tr>
                 <td class="auto-style9" style="background-color: #C0C0C0">
